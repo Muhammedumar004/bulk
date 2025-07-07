@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulk Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+</head>
+<body class="font-sans">
+
+ <!-- Top Bar -->
+<div class="bg-black text-white text-center py-1 text-sm font-semibold">
+  Up to 75% off
+</div>
+
+<!-- Main Navbar -->
+<header class="bg-white border-b shadow-sm">
+  <div class="flex items-center justify-between px-4 md:px-12 py-4">
+
+    <!-- Logo -->
+    <div class="text-4xl font-bold tracking-tight">
+      bulk
+    </div>
+
+    <!-- Search Bar (hidden on small screens) -->
+    <div class="hidden md:flex flex-1 max-w-2xl mx-4">
+      <div class="flex items-center w-full bg-gray-100 rounded-full px-4 py-2">
+        <i class="lucide lucide-search text-gray-400 mr-2 text-sm"></i>
+        <input
+          type="text"
+          placeholder="SEARCH"
+          class="bg-transparent w-full outline-none text-sm"
+        />
+      </div>
+    </div>
+
+    <!-- Icons + Mobile Menu Button -->
+    <div class="flex items-center space-x-4">
+      <img src="https://flagcdn.com/gb.svg" alt="UK Flag" class="w-6 h-4" />
+      <i class="lucide lucide-user text-black text-lg"></i>
+      <i class="lucide lucide-shopping-cart text-black text-lg"></i>
+
+      <!-- Hamburger for Mobile -->
+      <button id="menuToggle" class="md:hidden focus:outline-none">
+        <i class="lucide lucide-menu text-2xl text-black"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bottom Nav Menu -->
+  <nav id="navLinks" class="hidden md:flex flex-wrap justify-center gap-x-6 text-sm font-medium px-4 md:px-12 py-2">
+    <a href="#" class="text-red-600 hover:underline">OFFERS</a>
+    <a href="#" class="flex items-center gap-1 hover:underline">
+      Shop By Goal <i class="lucide lucide-chevron-down w-4 h-4"></i>
+    </a>
+    <a href="#" class="hover:underline">Protein</a>
+    <a href="#" class="hover:underline">Pre-Workout</a>
+    <a href="#" class="hover:underline">Creatine</a>
+    <a href="#" class="flex items-center gap-1 hover:underline">
+      Vegan <i class="lucide lucide-chevron-down w-4 h-4"></i>
+    </a>
+    <a href="#" class="flex items-center gap-1 hover:underline">
+      Vitamins & Minerals <i class="lucide lucide-chevron-down w-4 h-4"></i>
+    </a>
+    <a href="#" class="flex items-center gap-1 hover:underline">
+      Sports Nutrition <i class="lucide lucide-chevron-down w-4 h-4"></i>
+    </a>
+    <a href="#" class="flex items-center gap-1 hover:underline">
+      Health & Wellbeing <i class="lucide lucide-chevron-down w-4 h-4"></i>
+    </a>
+    <a href="#" class="hover:underline">Weight Loss</a>
+    <a href="#" class="flex items-center gap-1 hover:underline">
+      Foods <i class="lucide lucide-chevron-down w-4 h-4"></i>
+    </a>
+    <a href="#" class="flex items-center gap-1 hover:underline">
+      Accessories <i class="lucide lucide-chevron-down w-4 h-4"></i>
+    </a>
+    <a href="#" class="hover:underline">Blog</a>
+  </nav>
+
+  <!-- Mobile Dropdown Nav -->
+  <div id="mobileMenu" class="md:hidden hidden flex-col px-4 pb-4 text-sm font-medium space-y-2">
+    <a href="#" class="text-red-600">OFFERS</a>
+    <a href="#" class="flex items-center gap-1">Shop By Goal <i class="lucide lucide-chevron-down w-4 h-4"></i></a>
+    <a href="#">Protein</a>
+    <a href="#">Pre-Workout</a>
+    <a href="#">Creatine</a>
+    <a href="#" class="flex items-center gap-1">Vegan <i class="lucide lucide-chevron-down w-4 h-4"></i></a>
+    <a href="#" class="flex items-center gap-1">Vitamins & Minerals <i class="lucide lucide-chevron-down w-4 h-4"></i></a>
+    <a href="#" class="flex items-center gap-1">Sports Nutrition <i class="lucide lucide-chevron-down w-4 h-4"></i></a>
+    <a href="#" class="flex items-center gap-1">Health & Wellbeing <i class="lucide lucide-chevron-down w-4 h-4"></i></a>
+    <a href="#">Weight Loss</a>
+    <a href="#" class="flex items-center gap-1">Foods <i class="lucide lucide-chevron-down w-4 h-4"></i></a>
+    <a href="#" class="flex items-center gap-1">Accessories <i class="lucide lucide-chevron-down w-4 h-4"></i></a>
+    <a href="#">Blog</a>
+  </div>
+</header>
+
+
+<!--  -->
+<!--  -->
+<main>
+  <!-- Banner -->
+<section class="mx-auto px-4 mt-6">
+  <div class="relative bg-black rounded-xl overflow-hidden">
+
+    <!-- Top Red Bar -->
+    <div class="bg-red-600 text-white text-center text-xs font-semibold py-1 uppercase">
+      Limited Time Only
+    </div>
+
+    <!-- Banner Content -->
+    <div class="relative w-full h-full">
+
+      <!-- Shop Now Button -->
+      <div class="absolute inset-0 flex items-center justify-start px-6 md:px-12 z-20">
+        <a
+          href="#"
+          class="bg-white text-black font-semibold text-sm px-6 py-3 rounded-full hover:bg-gray-100 transition mt-44 sm:mt-32 md:mt-44">
+          Shop Now
+        </a>
+      </div>
+
+      <!-- Background Image -->
+      <img
+        src="https://www.bulk.com/img/march-25/payday-sale/media_1b757044cc256c3ad0faf10bf7c842387d6951fbd.png?width=2800&format=webply&optimize=medium"
+        alt="Bulk Products"
+        class="w-full h-auto object-cover object-center"
+      />
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+
+
+</body>
+</html>
